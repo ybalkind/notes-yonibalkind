@@ -6,10 +6,6 @@ Basic styles used before we boot up the parsing engine
 Error message and password prompt
 */
 
-.tc-tiddler-controls {display: none;}
-.tc-subtitle {display: none;}
-.tc-site-subtitle {color: white;}
-
 .tc-error-form {
 	font-family: sans-serif;
 	color: #fff;
@@ -592,7 +588,7 @@ template {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }html:-webkit-full-screen {
-	background-color: #336438;
+	background-color: #268478;
 }body.tc-body {
 	font-size: 14px;
 	line-height: 20px;
@@ -601,7 +597,7 @@ template {
 
 
 	color: #333333;
-	background-color: #336438;
+	background-color: #268478;
 	fill: #333333;
 }h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
@@ -794,7 +790,7 @@ a.tc-tiddlylink:hover {
 	border-radius: 20px;
 }.tc-tiddler-dragger-cover {
 	position: absolute;
-	background-color: #336438;
+	background-color: #268478;
 }.tc-dropzone {
 	position: relative;
 }.tc-dropzone.tc-dragover:before {
@@ -2439,32 +2435,39 @@ body.tc-dirty span.tc-dirty-indicator svg {
 }
 
 
-.tc-reveal.appear-block,
-.tc-popup.appear {
-	border-radius: 5px;
-	padding: 1px 1em;
-	
-  -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-     -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-          box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-;
-}
-.tc-popup.appear {
-	padding: 0 1em;
-	background: #ffffff;
-}
-.appear-reveal.appear-inline{
-margin-left:5px;
-}
-.appear-reveal.appear-inline.appear-once{
-margin-left:0;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color:#56e;
 }
 
-.tc-popup.tc-preview-tiddler{
-	max-width:600px;
-	width:100%;
-	padding:1em;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+height:300px;
+overflow: scroll;
+  background-color: white;
+  color: #000;
+  text-align: left;
+  border-radius: 6px;
+-moz-box-shadow: 10px 10px 5px #bbb;
+-webkit-box-shadow: 10px 10px 5px #bbb;
+box-shadow: 10px 10px 5px #bbb;
+  padding: 15px;
+display:block;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 80;
+  top: 20px;
+  left: 20px;
 }
+
+.tooltip:hover > .tooltiptext {
+  visibility: visible;
+}
+
+
 
 /*BOXES*/
 
