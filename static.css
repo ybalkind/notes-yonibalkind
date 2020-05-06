@@ -11,7 +11,7 @@ ul.vert-menu {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: green;
+  background-color: black;
 }
 
 .vert-menu li {
@@ -27,7 +27,7 @@ ul.vert-menu {
 }
 
 .vert-menu li a:hover {
-  background-color: #111;
+  background-color: green;
 }
 
 .tc-tiddler-controls {display: none;}
