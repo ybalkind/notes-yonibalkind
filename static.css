@@ -7,6 +7,7 @@ Error message and password prompt
 */
 
 .tc-tiddler-controls {display: none;}
+.tc-subtitle {display: none;}
 
 .tc-error-form {
 	font-family: sans-serif;
